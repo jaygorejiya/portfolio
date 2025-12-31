@@ -1,78 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jay Gorejiya | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="profilepic.jpeg" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
-    <div id="nav">
-        <h3><b>CYBER</b>FICTION*</h3>
-        <button>APRIL,2023</button>
-    </div>
-    <div id="main">
-        <div id="page">
-            <div id="loop">
-                <h1><b>CYBER</b>FICTION IS THE <b><i>REAL</i></b> <span>STORY</span> IN THE <span><i>METAVERSE.</i></span></h1>
-                <h1><b>CYBER</b>FICTION IS THE <b><i>REAL</i></b> <span>STORY</span> IN THE <span><i>METAVERSE.</i></span></h1>
-                <h1><b>CYBER</b>FICTION IS THE <b><i>REAL</i></b> <span>STORY</span> IN THE <span><i>METAVERSE.</i></span></h1>
-            </div>
-            <h3>CYBERFICTION AIMS TO BE A DECENTRALIZED COMMUNITY THAT CAN <br> CREATE NEW VALUES AND PROFITS THROUGH PLAY IN THE VIRTUAL <br> WORLD.</h3>
-            <h4>...SCROLL TO READ</h4>
-            <canvas></canvas>
-        </div>
-        <div id="page1">
-            <div id="right-text">
-                <h3>CYBERFICTION / KEY WORD</h3>
-                <h1>HAVE FUN
-                    <br>
-                    LET'S PLAY
-                    <br>
-                    JUST BE TOGETHER</h1>
-            </div>
-            <div id="left-text">
-                <h1>MAKE A STORY
-                    <br>
-                    TAKE A CHANCE
-                    <br>
-                    BUILD AND OWNED</h1>
-                    <h3>..AND MAINTAIN GOOD HUMANITY</h3>
-            </div>
-        </div>
-        <div id="page2">
-            <div id="text1">
-                <h3>CYBERFICTION / HAVE FUN</h3>
-                <h1>LET'S
-                    <br>
-                    HAVE FUN
-                    <br>
-                    TOGETHER</h1>
-            </div>
-            <div id="text2">
-                <p>LET'S HAVE A BLAST! LET'S JUST THROW AWAY AGE, GENDER, REGION, <br> STATUS, ETC., DON'T COMPETE, DON'T FIGHT, COOPERATE AND SHARE <br> WITH EACH OTHER AND ENJOY IT TOGETHER! SO THAT YOU CAN STAND <br> THERE IN THE NOT-TOO-DISTANT FUTURE AND DREAM OF ANOTHER NEW <br> FUTURE</p>
-            </div>
-        </div>
-        <div id="page3">
-            <div id="text3">
-                <h3>CYBERFICTION / PLAYGROUND</h3>
-                <h1>
 
-CYBERFIELD
-<br>
-IS OUR
-<br>
-PLAYGROUND
-                </h1>
-               
-            </div>
-        </div>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Port<span>folio</span></div>
+    <div class="menu-toggle" id="menu-toggle" tabindex="0" aria-label="Open menu" aria-expanded="false">
+      <i class="fas fa-bars"></i>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js" integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="script.js"></script>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#results">Results</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <!-- Exit menu for mobile -->
+      <li class="exit-menu"><a href="javascript:void(0)" id="exit-menu">Close</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero" id="home">
+    <div class="hero-content">
+      <h4>Hello,</h4>
+      <h1>I'm <span>Jay Hello </span></h1>
+      <div class="marquee-box">
+        <div class="marquee-text" aria-label="Scrolling text">
+          <h4>MCA <span>Student</span> | Web Developer | Tech Enthusiast</h4>
+        </div>
+      </div>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn">See My Projects</a>
+        <a href="#skills" class="btn btn-outline">Skills</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="circle-glow"></div>
+      <img src="profilepic.jpeg" alt="Profile Photo" />
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <p>
+      I’m a passionate BCA/MCA student with strong problem-solving skills in coding and technology. Experienced in developing real-world projects in web and app development, I am eager to contribute my technical expertise to a collaborative team and deliver impactful solutions while continuously advancing my skills.
+    </p>
+  </section>
+
+  <!-- Academic Results -->
+  <section class="stats-section" id="results">
+    <h2>Academic Results</h2>
+    <div class="stats-cards">
+      <div class="stat-card"><i class="fas fa-graduation-cap"></i><h3>Present</h3><p>M.C.A</p></div>
+      <div class="stat-card"><i class="fas fa-user-graduate"></i><h3>80.9%</h3><p>B.C.A</p></div>
+      <div class="stat-card"><i class="fas fa-university"></i><h3>61.2%</h3><p>12th Grade</p></div>
+      <div class="stat-card"><i class="fas fa-school"></i><h3>58.6%</h3><p>10th Grade</p></div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills" id="skills">
+    <h2>My Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card"><i class="fab fa-python"></i><p>Python</p></div>
+      <div class="skill-card"><i class="fab fa-react"></i><p>React</p></div>
+      <div class="skill-card"><i class="fab fa-java"></i><p>Java</p></div>
+      <div class="skill-card"><i class="fab fa-js"></i><p>JavaScript</p></div>
+      <div class="skill-card"><i class="fab fa-android"></i><p>Android</p></div>
+      <div class="skill-card"><i class="fas fa-database"></i><p>SQL</p></div>
+      <div class="skill-card"><i class="fab fa-html5"></i><p>HTML</p></div>
+      <div class="skill-card"><i class="fab fa-css3-alt"></i><p>CSS</p></div>
+      <div class="skill-card"><i class="fas fa-php"></i><p>PHP</p></div>
+      <div class="skill-card"><i class="fas fa-terminal"></i><p>C</p></div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+    <div class="project-container">
+      <div class="project-card">
+        <div class="card-front">
+          <i class="fab fa-php project-icon"></i>
+          <h3>Garage Stock & Billing System</h3>
+          <p>Hover to View Features</p>
+        </div>
+        <div class="card-back">
+          <ul>
+            <li>Developed a full-stack web application with PHP, MySQL, HTML, CSS,
+                and JavaScript.</li>
+            <li>Manages Garage's inventory, monitor spare parts, and
+                automate billing processes.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="card-front">
+          <i class="fas fa-code project-icon"></i>
+          <h3>3D Virtual Webpage</h3>
+          <p>Hover to View Features</p>
+        </div>
+        <div class="card-back">
+          <ul>
+            <li>Fully responsive 3D webpage design.</li>
+            <li>Utilizes CSS Grid and Flexbox for layout.</li>
+            <li>Incorporates smooth scrolling and parallax effects.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="card-front">
+          <i class="fas fa-file-code project-icon"></i>
+          <h3>Portfolio</h3>
+          <p>Hover to View Features</p>
+        </div>
+        <div class="card-back">
+          <ul>
+            <li>Showcases my projects, skills, and experience.</li>
+            <li>Built with HTML, CSS, and JavaScript.</li>
+            <li>Responsive design for all devices.</li>
+            <li>Modern Material UI with Dark Mode</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates Section -->
+  <section class="certificates" id="certificates">
+    <h2>Certificates</h2>
+
+    <div class="certificates-grid">
+      <div class="certificate-card">
+        <div class="certificate-ribbon">Generative AI</div>
+        <a href="https://certificate.hack2skill.com/user/GenAI5-28M/2025H2S04GENAI-A01252" target="_blank" rel="noopener">
+          <div class="certificate-info">
+            <h3>Gen AI Academy - Google</h3>
+            <p>Generative AI</p>
+          </div>
+        </a>
+    </div>
+
+    <div class="certificates-grid">
+      <div class="certificate-card">
+        <div class="certificate-ribbon">Responsive Web Design</div>
+        <a href="https://www.freecodecamp.org/certification/jaygorejiya/responsive-web-design" target="_blank" rel="noopener">
+          <div class="certificate-info">
+            <h3>Free Code Camp</h3>
+            <p>Responsive Web Design Certification with 300 hours of work.</p>
+          </div>
+        </a>
+      </div>
+
+
+    <div class="certificate-card">
+      <div class="certificate-ribbon">Web</div>
+      <a href="https://freecodecamp.org/certification/jaygorejiya/responsive-web-design" target="_blank" rel="noopener">
+        <div class="certificate-info">
+            <h3>Responsive Web Design</h3>
+            <p>Advanced Web Development with HTML/CSS</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="certificate-card">
+      <div class="certificate-ribbon">Agentic AI </div>
+        <a href="https://certificate.givemycertificate.com/c/a7a477f5-1d43-4550-844c-f768ad69db5f" target="_blank" rel="noopener">
+          <div class="certificate-info">
+            <h3>Google Cloud Rajkot</h3>
+            <p>Building Next Wave: Agentic AI with Google ADK & MCP</p>
+          </div>
+        </a>
+    </div>
+
+    <div class="certificate-card">
+      <div class="certificate-ribbon">Data Analysis</div>
+        <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_FW9vgd6pkSHBWnQiA_1749187104461_completion_certificate.pdf" target="_blank" rel="noopener">
+          <div class="certificate-info">
+            <h3>Deloitte - Forage</h3>
+            <p>Data Analytics Job Simulation</p>
+          </div>
+        </a>
+    </div>
+
+    <div class="certificate-card">
+      <div class="certificate-ribbon">Java Programming</div>
+        <a href="https://www.hackerrank.com/certificates/7b6f3f3d3f6e" target="_blank" rel="noopener">
+          <div class="certificate-info">
+            <h3>HackerRank</h3>
+            <p>Java (Basic) Certificate of Achievement</p>
+          </div>
+        </a>
+    </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Jay Gorejiya</p>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/jay-gorejiya/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/jaygorejiya_official/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.twitter.com/jaygorejiya/" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://github.com/jaygorejiya/" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="mailto:jgorejiya@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const menuToggle = document.getElementById('menu-toggle');
+      const navLinks = document.getElementById('nav-links');
+      const exitMenu = document.getElementById('exit-menu');
+
+      menuToggle.addEventListener('click', function() {
+        navLinks.classList.toggle('show');
+        const isExpanded = navLinks.classList.contains('show');
+        menuToggle.setAttribute('aria-expanded', isExpanded);
+      });
+
+      exitMenu.addEventListener('click', function() {
+        navLinks.classList.remove('show');
+        menuToggle.setAttribute('aria-expanded', 'false');
+      });
+
+      // Close menu when clicking outside
+      document.addEventListener('click', function(event) {
+        if (!navLinks.contains(event.target) && !menuToggle.contains(event.target)) {
+          navLinks.classList.remove('show');
+          menuToggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+
+      // Counter animation for percentages
+      const statCards = document.querySelectorAll('.stat-card h3');
+      const duration = 2000; // 2 seconds
+      const frameRate = 60;
+      const totalFrames = duration / (1000 / frameRate);
+
+      statCards.forEach(card => {
+        const target = parseFloat(card.textContent);
+        if (isNaN(target)) return; // Skip non-numeric values like "Present"
+
+        let current = 0;
+        const increment = target / totalFrames;
+        let frame = 0;
+
+        const animate = () => {
+          frame++;
+          current += increment;
+          if (current >= target) {
+            current = target;
+            card.textContent = current.toFixed(1) + '%';
+          } else {
+            card.textContent = current.toFixed(1) + '%';
+            requestAnimationFrame(animate);
+          }
+        };
+
+        // Start animation when section is in view
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              animate();
+              observer.unobserve(entry.target);
+            }
+          });
+        });
+        observer.observe(card);
+      });
+    });
+  </script>
+
 </body>
 </html>
+
